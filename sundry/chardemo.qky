@@ -1,0 +1,9 @@
+( This shows the use of Unicode in IO, naming, and string delimiters )
+
+[ $ ×Árvíztűrő Tükörfúrógép× echo$ cr ] is kiíratás ( -->   )
+[ stack ]                               is 名字      ( --> x )
+
+kiíratás
+
+$ ¤你叫什么名字？¤ input 名字 put
+$ 󱪇你好，󱪇 名字 take join $ ÷！÷ join echo$ cr
