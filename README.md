@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/@Alfika07/Uniquackery)](https://repl.it/github/Alfika07/Uniquackery)
+
 # Uniquackery
 
 Uniquackery is a Quackery implementation with no character restrictions.
