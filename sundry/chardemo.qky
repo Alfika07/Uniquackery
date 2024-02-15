@@ -6,4 +6,4 @@
 kiíratás
 
 $ ¤你叫什么名字？¤ input 名字 put
-$ 󱪇你好，󱪇 名字 take join $ ÷！÷ join echo$ cr
+$ 🖊️你好，🖊️ 名字 take join $ ÷！÷ join echo$ cr
