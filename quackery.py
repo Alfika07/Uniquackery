@@ -74,10 +74,8 @@ def quackery(source_string):
         for ch in from_stack():
             if ch in (10,13): # \n \r
                 result += '\n'
-            elif 31 < ch < 127:
-                result += chr(ch)
             else:
-                result += '?'
+                result += chr(ch)
         return result
 
     def string_to_stack(str):
@@ -85,10 +83,8 @@ def quackery(source_string):
         for ch in str:
             if ch == '\n':
                 result.append(13)
-            elif 31 < ord(ch) < 127:
-                result.append(ord(ch))
             else:
-                result.append(ord('?'))
+                result.append(ord(ch))
         to_stack(result)
 
     def python():
@@ -411,10 +407,8 @@ def quackery(source_string):
         char = from_stack()
         if char == 13:
             sys.stdout.write('\n')
-        elif 31 < char < 127:
-            sys.stdout.write(chr(char))
         else:
-            sys.stdout.write('?')
+            sys.stdout.write(chr(char))
     def ding():
         sys.stdout.write('\a')
 
