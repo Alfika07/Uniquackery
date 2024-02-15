@@ -1,4 +1,10 @@
-Quackery readme file by Gordon Charlton:
+Quackery readme file by Gordon Charlton
+Keep in mind that the PDFs are removed because they are no longer valid.
+If you want to read them, you can find them in the original repo: https://github.com/GordonCharlton/Quackery
+
+
+
+
 
 Quackery consists of the files and folders in the folder named
 quackery in which you find this file.
