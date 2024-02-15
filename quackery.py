@@ -1,4 +1,4 @@
-# [                              quackery                               ]
+# [                              uniquackery                               ]
 
 import time
 import sys
@@ -16,7 +16,7 @@ class QuackeryError(Exception):
 
 def quackery(source_string):
 
-    """   Perform a Quackery program. Return the stack as a string.  """
+    """   Perform an Uniquackery program. Return the stack as a string.  """
 
     def failed(message):
         traverse(build("""  stacksize pack
@@ -27,9 +27,9 @@ def quackery(source_string):
                             nestdepth ]bailby[  """))
         returnstack = string_from_stack()
         thestack = string_from_stack()
-        raise QuackeryError('\n       Problem: ' + message +
-                            '\nQuackery Stack: ' + str(thestack)[2:-2] +
-                            '\n  Return stack: ' + str(returnstack))
+        raise QuackeryError('\n          Problem: ' + message +
+                            '\nUniquackery Stack: ' + str(thestack)[2:-2] +
+                            '\n     Return stack: ' + str(returnstack))
 
     def isNest(item):
         return isinstance(item, list)
@@ -303,7 +303,7 @@ def quackery(source_string):
             for _ in range(a):
                 from_return()
         else:
-            failed('Bailed out of Quackery.')
+            failed('Bailed out of Uniquackery.')
 
     def qput():
         expect_nest()
@@ -566,7 +566,7 @@ def quackery(source_string):
                 to_stack(current_item)
                 program_counter += 1
             else:
-                failed('Quackery was worried by a python.')
+                failed('Uniquackery was worried by a python.')
 
     def isinteger(string):
         if len(string) > 0 and string[0] == '-':
@@ -1481,7 +1481,7 @@ protect b.nesting
     $ ']' join ]
   else
      [ drop
-       $ "Quackery was worried by a python."
+       $ "Uniquackery was worried by a python."
        fail ] ]         resolves unbuild      (       x --> $       )
 
 [ unbuild echo$ ]             is echo         (       x -->         )
@@ -1649,7 +1649,7 @@ nest$ buildernest put
             else:
                 raise
         except Exception as diagnostics:
-            print('Quackery system damage detected.')
+            print('Uniquackery system damage detected.')
             print('Python error: ' + str(diagnostics))
             sys.exit(1)
         else:
@@ -1673,15 +1673,15 @@ if __name__ == '__main__':
                 print(quackery(filetext))
                 print()
             except QuackeryError as diagnostics:
-                print('\nQuackery crashed.\n')
+                print('\nUniquackery crashed.\n')
                 print(diagnostics)
                 print()
             except Exception as diagnostics:
-                print('Quackery system damage detected.')
+                print('Uniquackery system damage detected.')
                 print('Python error: ' + str(diagnostics))
                 sys.exit(1)
     else:
-        print('\nWelcome to Quackery')
+        print('\nWelcome to Uniquackery')
         print('\nEnter "leave" to leave the shell.')
         quackscript = r"""
 
@@ -1695,6 +1695,6 @@ if __name__ == '__main__':
         try:
             quackery(quackscript)
         except QuackeryError as diagnostics:
-            print('\nQuackery crashed.\n')
+            print('\nUniquackery crashed.\n')
             print(diagnostics)
             print()
