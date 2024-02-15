@@ -1,4 +1,10 @@
-# Quackery
+# Uniquackery
+
+Uniquackery is a Quackery implementation with no character restrictions.
+
+The original Quackery only uses the characters ```0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrS sTtUuVvWwXxYyZz()[]{}<>~=+-*/^\|_.,:;?!'"`%@&#$```, all other characters are replaced with `?`. This fork is 100% compatible with Quackery, but doesn't have this restriction.
+
+## [GordonCharlton](https://github.com/GordonCharlton)'s original description about Quackery
 Quackery is a lightweight, open-source language for recreational and 
 educational programming, inspired by Forth and Lisp.
 
